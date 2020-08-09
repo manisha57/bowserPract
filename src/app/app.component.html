@@ -1,0 +1,11 @@
+<nav>
+    <ul>
+        <li><a routerLink="/employee" class="nav-link">Home</a></li>
+        <li *ngIf = "!auth.isLoggedIn()"><a routerLink="/login">Login</a></li>
+        <li *ngIf = "!auth.isLoggedIn()"><a routerLink="/register">Register</a></li>
+        <li *ngIf = "auth.isLoggedIn()"><a routerLink="/employee">{{auth.getUserDetails()?.firstname}}</a></li>
+        <li *ngIf = "auth.isLoggedIn()"><a (click)="auth.logout()" routerlink = "">Register</a></li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>
+

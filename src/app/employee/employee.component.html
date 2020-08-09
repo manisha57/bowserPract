@@ -1,0 +1,102 @@
+<!-- <p>employee works!</p>
+<div class="kt-portlet kt-portlet--height-fluid kt-portlet--mobile ">
+    <div class="kt-portlet__head kt-portlet__head--lg kt-portlet__head--noborder kt-portlet__head--break-sm">
+        <div class="kt-portlet__head-label">
+          <h3 class="kt-portlet__head-title">
+            Users
+          </h3>          
+        </div>
+        <div class="kt-portlet__head-toolbar">
+          <div class="pull-right">
+            <button class="btn btn-primary">Add New</button>
+          </div>
+        </div>
+    </div>
+  <div class="kt-container  kt-container--fluid  kt-grid__item kt-grid__item--fluid">
+       begin: Datatable -
+  <div class="kt-portlet__body">
+  <div class="kt-section">
+    <div class="kt-section__content" id="kt_datatable_latest_orders">
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th>
+              <span>Users</span>
+            </th>
+            <th>
+              <span>Role</span>
+            </th>
+            <th>
+              <span>Actions</span>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>             
+            <td>
+              <span>
+                <div class="kt-user-card-v2">
+                  <div class="kt-user-card-v2__details">
+                  <a class="kt-user-card-v2__name" routerLink="">manisha</a>
+                  <span class="kt-user-card-v2__email">
+                    abc.xyz@gmail.com                       
+                  </span>
+                  </div>
+                </div>
+              </span>
+            </td>
+            <td>
+             <span>
+                <span class="kt-user-card-v2__name">Software Developer</span>
+              </span>
+            </td>
+            <td>
+              <span>
+                <a class="btn btn-sm btn-clean btn-icon btn-icon-md" title="Edit details"><i class="la la-edit"></i></a>
+                <a class="btn btn-sm btn-clean btn-icon btn-icon-md" title="Delete"><i class="la la-trash"></i></a>
+              </span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </div>
+      </div>
+    </div> 
+  </div>
+  </div> -->
+
+
+  <div class="container">
+    <div class="jumbotron mt-5">
+      <div class="col-sm-8 mx-auto">
+        <h1 class="text-center">
+          Employee
+        </h1>
+      </div>
+      <table class="table col-md-6 mx-auto">
+        <tr>
+          <td>First name</td>
+          <td>{{details?.firstname}}</td>
+        </tr>
+        <tr>
+          <td>Last name</td>
+          <td>{{details?.lastname}}</td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>{{details?.email}}</td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td>{{details?.address}}</td>
+        </tr>
+        <tr>
+          <td>Date of Birth</td>
+          <td>{{details?.dob}}</td>
+        </tr>        <tr>
+          <td>Company</td>
+          <td>{{details?.company}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
